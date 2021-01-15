@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GaregeApi</name>
+    </assembly>
+    <members>
+        <member name="T:GaregeApi.Configuracion.Conections">
+            <summary>
+            Configuracion personalizada la base de datos no es necesario declararla
+            </summary>
+        </member>
+        <member name="F:GaregeApi.Configuracion.Conections.conn">
+            <summary>
+            Usar cuando se conecte a la base de datos.
+            <para>Esta retorna <see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> cunado se realize la coneccion</para>
+            </summary>
+        </member>
+        <member name="M:GaregeApi.Configuracion.Conections.Conectar">
+             <summary>
+             Realiza la coneccion a la base de datos.
+             </summary>
+            
+        </member>
+        <member name="M:GaregeApi.Configuracion.Conections.Desconectar">
+            <summary>
+            Finaliza la coneccion de la base de datos
+            </summary>
+        </member>
+        <member name="M:GaregeApi.Configuracion.Conections.ConsultMultiTable(System.String)">
+            <summary>
+            Realiza consultas mas avanzadas.
+            <para>Esta retorna el valor de tipo <see cref="T:MySql.Data.MySqlClient.MySqlDataReader"/> del resultado de la consulta</para>
+            </summary>
+            <param name="sqlcomand"></param>
+            <returns name="result"> Retorna MySqlReader</returns>
+        </member>
+        <member name="T:GaregeApi.Controllers.LoginController">
+            <summary>
+            Realiza peticiones en la tabla login
+            </summary>
+        </member>
+        <member name="T:GaregeApi.Controllers.WeatherForecastController">
+            <summary>
+            Api de WeatherForecast realiza opreciones
+            </summary>
+        </member>
+        <member name="M:GaregeApi.Controllers.WeatherForecastController.Get">
+            <summary>
+            Retorna datos actuales del clima
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GaregeApi.DTOs.LoginDTO">
+            <summary>
+            Interactua con la tabla de login en la base de datos
+            </summary>
+        </member>
+        <member name="T:GaregeApi.DTOs.PaqueteTCP">
+            <summary>
+            Envia datos al cliente mediante ApiRest usando 
+            los codigos de respuestas HTTP/HTTPS
+            </summary>
+        </member>
+        <member name="P:GaregeApi.DTOs.PaqueteTCP.StatusCode">
+            <summary>
+            Verifica el codigo de estado HTTP/HTTPS
+            <para>Verifica el tipo respuesta mas informacion:
+            </para>
+            </summary>
+        </member>
+        <member name="P:GaregeApi.DTOs.PaqueteTCP.Status">
+            <summary>
+            Respuesta de la peticion HTTP/HTTPS
+            </summary>
+        </member>
+        <member name="P:GaregeApi.DTOs.PaqueteTCP.Mensage">
+            <summary>
+            Mensaje del estado
+            <para>Puedes enviar un mensaje personalizazo</para>
+            </summary>
+        </member>
+        <member name="P:GaregeApi.DTOs.PaqueteTCP.Data">
+            <summary>
+            Envia datos al cliente mediante protocolo HTTP/HTTPS
+            <para>Esta envia datos al cliente de tipo <see cref="T:System.Array"/> para 
+            enviar los datos por el protocolo TCP/IP</para>
+            </summary>
+        </member>
+    </members>
+</doc>
