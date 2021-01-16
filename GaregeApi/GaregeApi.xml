@@ -39,14 +39,16 @@
             Realiza peticiones en la tabla login
             </summary>
         </member>
-        <member name="T:GaregeApi.Controllers.WeatherForecastController">
+        <member name="M:GaregeApi.Controllers.LoginController.Login(GaregeApi.Modelos.AutentifyForm)">
             <summary>
-            Api de WeatherForecast realiza opreciones
+            Inicia sesion en el sistema
             </summary>
+            <param name="login"></param>
+            <returns></returns>
         </member>
-        <member name="M:GaregeApi.Controllers.WeatherForecastController.Get">
+        <member name="M:GaregeApi.Controllers.LoginController.Create(GaregeApi.Modelos.LoginModel)">
             <summary>
-            Retorna datos actuales del clima
+            Agrega un nuevo usuario
             </summary>
             <returns></returns>
         </member>
@@ -85,6 +87,13 @@
             <para>Esta envia datos al cliente de tipo <see cref="T:System.Array"/> para 
             enviar los datos por el protocolo TCP/IP</para>
             </summary>
+        </member>
+        <member name="T:GaregeApi.InterfaceDTOs.QueryDTO`1">
+            <summary>
+            Asigna los modelo acordado en la Querys
+            <para> Crea los metodos para realizar las consultas <see cref="T:GaregeApi.InterfaceDTOs.QueryDTO`1"/> </para>
+            </summary>
+            <typeparam name="ModelQueryData"></typeparam>
         </member>
     </members>
 </doc>

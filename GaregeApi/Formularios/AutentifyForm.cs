@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GaregeApi.Modelos
 {
-    public class AutentifyModel
+    public class AutentifyForm
     {
         [Required(ErrorMessage = "Nombre de usuario requerido")]
         public string email { get; set; }

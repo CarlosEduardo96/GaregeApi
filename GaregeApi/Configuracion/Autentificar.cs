@@ -18,9 +18,10 @@ namespace GaregeApi.Configuracion
         {
             LoginModel user = null;
             Conectar();
-            string sql = string.Format("select * from login where email='{0}' and pwd={1}",email,pwd);
+            string sql = string.Format("select * from login where email='{0}' and pwd='{1}'", email,pwd);
             command = new MySqlCommand(sql,conn);
             reader = command.ExecuteReader();
+
             if (reader.HasRows) {
                 while (reader.Read()) {
                     user = new LoginModel {

@@ -5,13 +5,18 @@ using System.Threading.Tasks;
 
 namespace GaregeApi.InterfaceDTOs
 {
+    /// <summary>
+    /// Asigna los modelo acordado en la Querys
+    /// <para> Crea los metodos para realizar las consultas <see cref="QueryDTO{ModelQueryData}"/> </para>
+    /// </summary>
+    /// <typeparam name="ModelQueryData"></typeparam>
     interface QueryDTO<ModelQueryData>
     {
         public ModelQueryData SelectById(int id);
 
-        public ModelQueryData SelectByName(ModelQueryData type);
+        public List<ModelQueryData> Find(string search, int Colums);
 
-        public ModelQueryData Find(ModelQueryData type);
+        public List<ModelQueryData> SelectAll();
 
         public ModelQueryData Insert(ModelQueryData type);
 
